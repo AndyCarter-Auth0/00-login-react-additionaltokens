@@ -1,0 +1,53 @@
+{
+    "tenant": "YOUR_TENANT",
+    "global": false,
+    "is_token_endpoint_ip_header_trusted": false,
+    "name": "React Native POC - Additional Tokens",
+    "is_first_party": true,
+    "oidc_conformant": true,
+    "sso_disabled": false,
+    "cross_origin_auth": false,
+    "refresh_token": {
+        "expiration_type": "non-expiring",
+        "leeway": 0,
+        "infinite_token_lifetime": true,
+        "infinite_idle_token_lifetime": true,
+        "token_lifetime": 2592000,
+        "idle_token_lifetime": 1296000,
+        "rotation_type": "non-rotating"
+    },
+    "allowed_clients": [],
+    "allowed_logout_urls": [
+        "com.auth0samples://YOUR_TENANT/ios/com.auth0samples/callback",
+        "com.auth0samples://YOUR_TENANT/android/com.auth0samples/callback"
+    ],
+    "callbacks": [
+        "com.auth0samples://YOUR_TENANT/ios/com.auth0samples/callback",
+        "com.auth0samples://YOUR_TENANT/android/com.auth0samples/callback"
+    ],
+    "native_social_login": {
+        "apple": {
+            "enabled": false
+        },
+        "facebook": {
+            "enabled": false
+        }
+    },
+    "client_id": "YOUR_CLIENT_ID",
+    "callback_url_template": false,
+    "client_secret": "YOUR_CLIENT_SECRET",
+    "jwt_configuration": {
+        "alg": "RS256",
+        "lifetime_in_seconds": 36000,
+        "secret_encoded": false
+    },
+    "client_aliases": [],
+    "token_endpoint_auth_method": "none",
+    "app_type": "native",
+    "grant_types": [
+        "authorization_code",
+        "implicit",
+        "refresh_token"
+    ],
+    "custom_login_page_on": true
+}
