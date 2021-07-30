@@ -4,7 +4,7 @@ The complete guide to getting started with [react-native-auth0](https://github.c
 
 This is an extension to the quickstart to show how additional access tokens can be obtained, with a different audience
 
-## Pre-Requisits
+## Pre-requisites
 
 You will need:
 
